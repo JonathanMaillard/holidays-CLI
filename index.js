@@ -2,6 +2,12 @@
 
 const { getCode } = require("country-list");
 const axios = require('axios');
+const ora = require('ora');
+const chalk = require('chalk');
+
+
+//Start loading animation
+const spinner = ora('Loading').start();
 
 
 
@@ -10,7 +16,8 @@ const myArgs = process.argv.slice(2);
 
 // check the number of argument and abort if different than 1 or 2
 if(myArgs.length != 2 && myArgs.length != 1){
-    console.error("Error. You must declare a country and, optionnaly, a date.");
+    spinner.stop();
+    console.error(chalk.red("Error. You must declare a country and, optionnaly, a date."));
     return;
 }
 
@@ -31,6 +38,7 @@ if(myArgs.length == 2){
 axios.get('https://date.nager.at/api/v2/PublicHolidays/'+year+'/'+code)
   .then(function (response) {
     // handle success - log the dates and the holiday names
+    spinner.stop();
     response.data.forEach(holiday => {
         console.log(holiday.name + ' - ' + holiday.date);
     });
@@ -39,6 +47,7 @@ axios.get('https://date.nager.at/api/v2/PublicHolidays/'+year+'/'+code)
   .catch(function (error) {
     // handle error
     //console.log(error);
-    console.error('You migh have entered a wrong country name or an invalid year');
+    spinner.stop();
+    console.error(chalk.red('You migh have entered a wrong country name or an invalid year'));
   })
   
