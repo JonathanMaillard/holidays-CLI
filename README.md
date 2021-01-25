@@ -29,7 +29,8 @@ Belgian National Day - 2021-07-21
 Assumption Day - 2021-08-15
 All Saints' Day - 2021-11-01
 Armistice Day - 2021-11-11
-Christmas Day - 2021-12-25```
+Christmas Day - 2021-12-25
+```
 
 
 If you want the holidays of a specific year, simply add it after the country:
