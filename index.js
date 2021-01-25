@@ -10,7 +10,7 @@ const myArgs = process.argv.slice(2);
 
 // check the number of argument and abort if different than 1 or 2
 if(myArgs.length != 2 && myArgs.length != 1){
-    console.log("Synthax Error. You must declare a Country and, optionnaly, a date.");
+    console.error("Error. You must declare a country and, optionnaly, a date.");
     return;
 }
 
@@ -39,6 +39,6 @@ axios.get('https://date.nager.at/api/v2/PublicHolidays/'+year+'/'+code)
   .catch(function (error) {
     // handle error
     //console.log(error);
-    console.error('You migh have entered a wrong Country name or an invalid year');
+    console.error('You migh have entered a wrong country name or an invalid year');
   })
   
