@@ -47,14 +47,15 @@ For example:
 
 Will return:
 
-`New Year's Day - 2004-01-01`
-`Easter Sunday - 2004-04-11`
-`Easter Monday - 2004-04-12`
-`Labour Day - 2004-05-01`
-`Ascension Day - 2004-05-20`
-`Whit Monday - 2004-05-31`
-`Belgian National Day - 2004-07-21`
-`Assumption Day - 2004-08-15`
-`All Saints' Day - 2004-11-01`
-`Armistice Day - 2004-11-11`
-`Christmas Day - 2004-12-25`
+```New Year's Day - 2004-01-01
+Easter Sunday - 2004-04-11
+Easter Monday - 2004-04-12
+Labour Day - 2004-05-01
+Ascension Day - 2004-05-20
+Whit Monday - 2004-05-31
+Belgian National Day - 2004-07-21
+Assumption Day - 2004-08-15
+All Saints' Day - 2004-11-01
+Armistice Day - 2004-11-11
+Christmas Day - 2004-12-25
+```
