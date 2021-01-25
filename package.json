@@ -1,0 +1,26 @@
+{
+  "name": "@jona1995/holidates",
+  "version": "1.0.0",
+  "bin": {
+    "holidates": "./index.js"
+  },
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanMaillard/holidays-CLI.git"
+  },
+  "author": "Jonathan Maillard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonathanMaillard/holidays-CLI/issues"
+  },
+  "homepage": "https://github.com/JonathanMaillard/holidays-CLI#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "country-list": "^2.2.0"
+  }
+}
